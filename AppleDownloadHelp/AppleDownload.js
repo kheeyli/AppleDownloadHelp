@@ -16,23 +16,34 @@ import img6 from '../Icons/img6.png'
 
 
 const AppleDownload = () => {
-    const handlePress = () => {
+    
+    const link1 = () => {
         Linking.openURL('https://appleid.apple.com/');
     };
 
-    const handlePressAgain = () => {
-        Linking.openURL('https://appleid.apple.com/');
-      };
+    const link2 = () => {
+        Linking.openURL('https://shenfendaquan.com/Index/index/meiguo_zhenshi_dizhi');
+    };
+
+    const link3 = () => {
+        Linking.openURL('https://h5.shafayouxi.org');
+    };
+
+    const link4 = () => {
+        Linking.openURL('https://h5.laiwanpai.com/');
+    };
 
     return (
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container}>
             <ImageBackground source={background} style={styles.backgroundImage}>
         <View style={styles.header}>
+
           <Image
             source={HeaderImage}
             style={styles.headerImage}
           />
+
           <Text style={styles.headerText}>Apple Download Help</Text>
         </View> 
           <Text style={styles.infoText}>Apple iPhone accounts registered in mainland China are currently unable to download the GoPlay360 app. </Text>
@@ -46,12 +57,18 @@ const AppleDownload = () => {
           <Text style={styles.steps}>GoPlay360's web version allows gaming without downloads, accessible on PC, iOS, and Android devices</Text>
           <Text style={styles.link}>Click on the web link to access it:</Text>
 
-          <Image
-            source={websiteblue}
-            style={styles.weblink1} />
+        <TouchableOpacity onPress={link3}>
+            <Image
+                source={websiteblue} 
+                style={styles.weblink1}
+            />
+         </TouchableOpacity>
+
+         <TouchableOpacity onPress={link4}>
          <Image
             source={websitegreen}
             style={styles.weblink2} />
+        </TouchableOpacity>
         
 
         <View style={styles.line2}></View>
@@ -63,7 +80,7 @@ const AppleDownload = () => {
 
         <Text style={styles.steps}>
             • Open the link {' '}
-            <TouchableOpacity onPress={handlePress}>
+            <TouchableOpacity onPress={link1}>
                 <Text style={styles.Link}>https://appleid.apple.com/</Text>
             </TouchableOpacity>{' '} and scroll to the bottom of the page to create a new Apple ID.
          </Text>
@@ -99,7 +116,7 @@ const AppleDownload = () => {
 
             <Text style={styles.steps}>
                 • Open the web page again:{' '}
-                <TouchableOpacity onPress={handlePressAgain}>
+                <TouchableOpacity onPress={link1}>
                     <Text style={styles.Link}>https://appleid.apple.com</Text>
                 </TouchableOpacity>{' '}
                 and scroll to the bottom of the page to create a new Apple ID.
@@ -110,8 +127,14 @@ const AppleDownload = () => {
             source={img3}
             style={styles.img3} />
 
-            <Text style={styles.steps}>• Use https://shenfendaquan.com to generate a foreign address for the United States. 
-            Change the country/region setting to the United States and fill in the required information accordingly.</Text>
+
+            <Text style={styles.steps}>
+            • Use     {' '}
+            <TouchableOpacity onPress={link2}>
+                <Text style={styles.Link}> https://shenfendaquan.com </Text>
+            </TouchableOpacity>{' '}to generate a foreign address for the United States. Change the country/region setting to the United States and fill in the required information accordingly.
+            </Text>
+
             <Text style={styles.steps}>• After selecting the country or region you want to change to, there will be a pop-up window as shown in the image below. Click 'Continue to Update'.</Text>
 
             <Image

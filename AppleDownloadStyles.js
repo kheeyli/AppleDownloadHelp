@@ -12,28 +12,28 @@ backgroundImage: {
 
   headerImageContainer: {
     position: 'relative',
-    justifyContent: 'center', // Center content vertically
-    alignItems: 'center', // Center content horizontally
+    justifyContent: 'center', 
+    alignItems: 'center', 
   },
 
   headerImage: {
     width: '100%',
-    height: 70, // Adjust the height as needed
+    height: 57, 
   },
 
   headerText: {
     position: 'absolute',
-    fontSize: 21,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: 'white', // Optional: Set text color to white for better visibility
+    color: 'white', 
     padding: 20,
   },
 
   infoText: {
     fontSize: 21,
     color:'black',
-    padding: 25,
-    paddingBottom:15,
+    padding: 20,
+    paddingBottom:5,
     textAlign: 'justify',
   },
 
@@ -50,7 +50,7 @@ backgroundImage: {
     width: '100%',
     marginB:10,
     position: 'absolute',
-    top: 432,
+    top: 405,
   },
 
   Suggestion: {
@@ -95,7 +95,6 @@ backgroundImage: {
 
   bold: {
     fontWeight: 'bold',
-    // Add other styles specific to the bold text here
   },
 
   Link :{
@@ -116,27 +115,29 @@ backgroundImage: {
 
   weblink1: {
     height: 50,
-    width: '45%', // Adjust the width of each image as needed
-    marginBottom: 20, // Adjust the margin between the images as needed
+    width: '45%', 
     position:'absolute',
+    top: -15,
     left:20,
-    top: 370,
+
   },
 
   weblink2: {
     height: 50,
-    width: '45%', // Adjust the width of each image as needed
-    marginBottom: 20, // Adjust the margin between the images as needed
+    width: '45%',
     position:'absolute',
+    top: -15,
     left:220,
-    top: 370,
   },
+
+
   img: {
     width: 300,
     height: 150,
     alignSelf: 'center',
     marginBottom:20,
   },
+  
   img1: {
     width: 300,
     height: 300,
